@@ -1,2 +1,2 @@
-# dealershipProject
-SENAI project for the afternoon class.
+# dealershipProject 🐯🦁
+SENAI project for the afternoon class. 
