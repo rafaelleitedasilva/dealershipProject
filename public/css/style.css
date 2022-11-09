@@ -1,20 +1,7 @@
 .container{
     position: relative;
     width: 100%;
-}
-
-.container>.sala4{
-    position: absolute;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    top: 100px;
-    left: 140px;
-    background-color: white;
-    border: 1px solid black;
-    height: 280px;
-    width: 400px; 
-    z-index: -1;
+    height: 100%;
 }
 
 .container>.sala1{
@@ -29,7 +16,6 @@
     height: 25px;
     width: 60px; 
     transform: rotate(20deg);
-
 }
 
 .container>.sala2{
@@ -57,4 +43,72 @@
     background-color: white;
     height: 200px;
     width: 300px; 
+}
+
+.container>.sala4{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 100px;
+    left: 140px;
+    background-color: white;
+    border: 1px solid black;
+    height: 280px;
+    width: 400px; 
+    z-index: -1;
+}
+
+.modal{
+    position: absolute;
+    top: 50vh;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background-color: aliceblue;
+    height: 400px;
+    width: 800px;
+    padding: 20px;
+    z-index: 2000;
+    box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.603);
+}
+
+.sair{
+    font-family: sans-serif;
+    font-size: 20px;
+    position: absolute;
+    color: rgb(0, 0, 0);
+    font-weight: bolder;
+    top: 0;
+    right: 0;
+    border: none;
+    z-index: 2000;
+}
+
+.sair:hover{
+    cursor: pointer;
+}
+
+.desactive{
+    display: none;
+}
+
+.desactive:hover{
+    cursor:pointer !important;
+}
+
+.acive{
+    display: block;
+}
+
+.container-carros{
+    width: 100%;
+}
+
+.container-carros>p{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    display: inline-flex;
+    font-size: 16px;
+    text-transform: uppercase;
 }

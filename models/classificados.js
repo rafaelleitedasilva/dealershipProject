@@ -1,7 +1,8 @@
 const mongoose = require('mongoose')
-const classificados = mongoose.model('ambiente', {
-    Modelo: Boolean,
-    Preco: Float64Array
+const classificados = mongoose.model('classificados', {
+    Modelo: String,
+    NomeDaSala: String,
+    Preco: String
 })
 
 module.exports = classificados

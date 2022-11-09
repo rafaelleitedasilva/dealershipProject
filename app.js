@@ -9,12 +9,16 @@ app.use(
     }),
 )
 
-
 app.set('view engine', 'ejs');
 app.use(express.json()); 
 app.set('views', './views');
 app.use(express.static(__dirname + '/public'));
 
+const index = require('./routes/index')
+app.use('/', index)
+
+const carros = require('./routes/carros')
+app.use('/', carros)
 
 
 const DB_PASSWORD = 'O1VmaOAmmRzGrra4'
@@ -29,6 +33,3 @@ mongoose
         })
     })
     .catch((err) => console.log(err))
-
-const index = require('./routes/index')
-app.use('/', index)
