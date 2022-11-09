@@ -4,6 +4,11 @@
     height: 100%;
 }
 
+.sd-70{
+    overflow-y: scroll;
+    height: 300px;
+}
+
 .container>.sala1{
     position: absolute;
     display: flex;

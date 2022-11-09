@@ -4,23 +4,25 @@
         <div onclick="modal('<%- SalasCot[x].NomeDaSala -%>-modal')" id="div-pai" class="<%- SalasCot[x].NomeDaSala -%>" <% if (SalasCot[x].NumeroDeCarros > 0) { %>style="background-image:radial-gradient(white,#67A0E6,#153259);"<% } %>><strong style="font-size:20px;font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;"><%-SalasCot[x].NumeroDeCarros-%></strong></div>
         
         <div class="modal <%- SalasCot[x].NomeDaSala  -%>-modal desactive" id="<%- SalasCot[x].NomeDaSala  -%>-modal">
-            <div class="container" id="container-<%- SalasCot[x].NomeDaSala -%>-modal">
-                <h1 style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">
-                    Carros Disponíveis
-                </h1>
-                <button class="sair" onclick="sair('<%- SalasCot[x].NomeDaSala -%>-modal')">X</button>
+            <h1 style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">
+                Carros Disponíveis
+            </h1>
+            <div class="container sd-70" id="container-<%- SalasCot[x].NomeDaSala -%>-modal">
+                
+                
             </div>
+            <button class="sair" onclick="sair('<%- SalasCot[x].NomeDaSala -%>-modal')">X</button>
         </div>
         
         <% } %>
     </div>
     <script>
-        let x = 1
-
         function modal(param){
+
             let modal = document.getElementById(param);
             modal.setAttribute('class', `modal ${param}-modal active`);
             let classificados = []
+
             
             $.ajax({
                 url:"/carros",
@@ -28,11 +30,13 @@
                 dataType: 'json',
                 success: function(response){
                     $.each(response, function(key,value){
-                        console.log(value)
-                        if(`${value[0].NomeDaSala}-modal` == param && x == 1){
-                            $(`#container-${param}`).append(`<div class="container-carros"><p>Modelo: ${value[0].Modelo}</p> <p> R$${value[0].Preco},00</p></div>`)
-                            x = 0
+                        $(`#container-${param}`).html('')
+                        for(let i = 0; i < value.length; i++){
+                            if(`${value[i].NomeDaSala}-modal` == param){
+                            $(`#container-${param}`).append(`<div class="container-carros"><p>Modelo: ${value[i].Modelo}</p> | <p>Preço: R$${value[i].Preco},00</p></div>`)
                         }
+                        }
+                        
                     })
                 }
             });
