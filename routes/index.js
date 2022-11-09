@@ -4,10 +4,10 @@ const salas = require('../models/salas')
 router.get("/home", async(req, res) => {
     //extrair dados da requisição
 
-    let salas = await salas.find()
+    let SalasCot = await salas.find()
 
     try{
-        res.render('home', {salas}) 
+        res.render('home', {SalasCot}) 
     }catch(error){
         res.status(500).json({error:error})
     }

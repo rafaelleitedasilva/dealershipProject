@@ -1,7 +1,7 @@
 <%- include('./template/header') -%>
     <div class="container">
-        <% for(let x = 0; x < salas.length; x++){ %>
-            <div class="salas[x].NomeDaSala">sala[x].NumeroDeCarros
+        <% for(let x = 0; x < SalasCot.length; x++){ %>
+            <div class="<%- SalasCot[x].NomeDaSala -%>"><%-SalasCot[x].NumeroDeCarros-%></div>
         <% } %>
     </div>
 <%- include('./template/footer') -%>
