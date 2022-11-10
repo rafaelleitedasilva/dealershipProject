@@ -8,8 +8,7 @@
                 Carros Disponíveis
             </h1>
             <div class="container sd-70" id="container-<%- SalasCot[x].NomeDaSala -%>-modal">
-                
-                
+
             </div>
             <button class="sair" onclick="sair('<%- SalasCot[x].NomeDaSala -%>-modal')">X</button>
         </div>
@@ -18,9 +17,13 @@
     </div>
     <script>
         function modal(param){
+            let modals = document.getElementsByClassName('modal')
+            for (let i = 0;i<modals.length;i++){
+                modals[i].setAttribute('class', `modal ${param}-modal desactive`)
+            }
 
-            let modal = document.getElementById(param);
-            modal.setAttribute('class', `modal ${param}-modal active`);
+            let modal = document.getElementById(param)
+            modal.setAttribute('class', `modal ${param}-modal active`)
             let classificados = []
 
             

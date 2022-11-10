@@ -24,7 +24,7 @@ app.use('/', carros)
 const DB_PASSWORD = 'O1VmaOAmmRzGrra4'
 
 mongoose
-    .connect(`mongodb+srv://CARROS:O1VmaOAmmRzGrra4@cluster0.wn5bpid.mongodb.net/salas?retryWrites=true&w=majority`)
+    .connect(`mongodb://localhost:27017/carros`)
     .then(() => {
         console.log("Conectamos ao MongoDB!")
         //entregar uma porta

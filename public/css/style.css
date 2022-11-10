@@ -64,6 +64,20 @@
     z-index: -1;
 }
 
+.container>.sala5{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0px;
+    left: 400px;
+    background-color: white;
+    border: 1px solid black;
+    height: 180px;
+    width: 360px; 
+}
+
+
 .modal{
     position: absolute;
     top: 50vh;
