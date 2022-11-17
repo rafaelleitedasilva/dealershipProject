@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Concessionária</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="flex">
+        <div class="container">
+            <!-- Sala 1 -->
+            <div onclick="modal('Sala1')" id="div-pai" class="Sala1"><strong style="font-size:20px;font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">2</strong></div>
+            <div class="modal sala1-modal desactive" id="Sala1-modal">
+                <h1 style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">
+                    Carros Disponíveis
+                </h1>
+                <p class="flex-p" id="1a">Modelo ABC | Preço R$xxx.xxx,xx <button onclick="apaga(`1a`)">X</button></p>
+                <p class="flex-p" id="2a">Modelo ABC | Preço R$xxx.xxx,xx <button onclick="apaga(`2a`)">X</button></p>
+
+                <button class="sair" onclick="sair('Sala1')">X</button>
+            </div>
+            <!-- Sala 2 -->
+            <div onclick="modal('Sala2')" id="div-pai" class="Sala2"><strong style="font-size:20px;font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">11</strong></div>
+            <div class="modal sala2-modal desactive" id="Sala2-modal">
+                <h1 style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">
+                    Carros Disponíveis
+                </h1>
+                <p class="flex-p" id="1b">Modelo ABC | Preço R$xxx.xxx,xx <button onclick="apaga(`1b`)">X</button></p>
+                <p class="flex-p" id="2b">Modelo ABC | Preço R$xxx.xxx,xx <button onclick="apaga(`2b`)">X</button></p>
+                <p class="flex-p" id="3b">Modelo ABC | Preço R$xxx.xxx,xx <button onclick="apaga(`3b`)">X</button></p>
+                <p class="flex-p" id="4b">Modelo ABC | Preço R$xxx.xxx,xx <button onclick="apaga(`4b`)">X</button></p>
+                <p class="flex-p" id="5b">Modelo ABC | Preço R$xxx.xxx,xx <button onclick="apaga(`5b`)">X</button></p>
+                <p class="flex-p" id="6b">Modelo ABC | Preço R$xxx.xxx,xx <button onclick="apaga(`6b`)">X</button></p>
+                <p class="flex-p" id="7b">Modelo ABC | Preço R$xxx.xxx,xx <button onclick="apaga(`7b`)">X</button></p>
+                <p class="flex-p" id="8b">Modelo ABC | Preço R$xxx.xxx,xx <button onclick="apaga(`8b`)">X</button></p>
+                <p class="flex-p" id="9b">Modelo ABC | Preço R$xxx.xxx,xx <button onclick="apaga(`9b`)">X</button></p>
+                <p class="flex-p" id="10b">Modelo ABC | Preço R$xxx.xxx,xx <button onclick="apaga(`10b`)">X</button></p>
+                <p class="flex-p" id="11b">Modelo ABC | Preço R$xxx.xxx,xx <button onclick="apaga(`11b`)">X</button></p>
+         
+                <button class="sair" onclick="sair('Sala2')">X</button>
+            </div>
+            <!-- Sala 3 -->
+            <div onclick="modal('Sala3')" id="div-pai" class="Sala3"><strong style="font-size:20px;font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">2</strong></div>
+            <div class="modal sala1-modal desactive" id="Sala3-modal">
+                <h1 style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">
+                    Carros Disponíveis
+                </h1>
+                <p class="flex-p" id="1c">Modelo ABC | Preço R$xxx.xxx,xx <button onclick="apaga(`1c`)">X</button></p>
+                <p class="flex-p" id="2c">Modelo ABC | Preço R$xxx.xxx,xx <button onclick="apaga(`2c`)">X</button></p>
+                <button class="sair" onclick="sair('Sala3')">X</button>
+            </div>
+            <!-- Sala 4 -->
+            <div onclick="modal('Sala4')" id="div-pai" class="Sala4"><strong style="font-size:20px;font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">1</strong></div>
+            <div class="modal Sala4-modal desactive" id="Sala4-modal">
+                <h1 style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">
+                    Carros Disponíveis
+                </h1>
+                <p class="flex-p" id="1d">Modelo ABC | Preço R$xxx.xxx,xx <button onclick="apaga(`1d`)">X</button></p>
+                <button class="sair" onclick="sair('Sala4')">X</button>
+            </div>
+            <!-- Sala 5 -->
+            <div onclick="modal('Sala5')" id="div-pai" class="Sala5"><strong style="font-size:20px;font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">5</strong></div>
+            <div class="modal sala5-modal desactive" id="Sala5-modal">
+                <h1 style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">
+                    Carros Disponíveis
+                </h1>
+                <p class="flex-p" id="1e">Modelo ABC | Preço R$xxx.xxx,xx <button onclick="apaga(`1e`)">X</button></p>
+                <p class="flex-p" id="2e">Modelo ABC | Preço R$xxx.xxx,xx <button onclick="apaga(`2e`)">X</button></p>
+                <p class="flex-p" id="3e">Modelo ABC | Preço R$xxx.xxx,xx <button onclick="apaga(`3e`)">X</button></p>
+                <p class="flex-p" id="4e">Modelo ABC | Preço R$xxx.xxx,xx <button onclick="apaga(`4e`)">X</button></p>
+                <p class="flex-p" id="5e">Modelo ABC | Preço R$xxx.xxx,xx <button onclick="apaga(`5e`)">X</button></p>
+
+                <button class="sair" onclick="sair('Sala5')">X</button>
+            </div>
+            <!-- Sala 6 -->
+            <div onclick="modal('Sala6')" id="div-pai" class="Sala6"><strong style="font-size:20px;font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">3</strong></div>
+            <div class="modal sala6-modal desactive" id="Sala6-modal">
+                <h1 style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">
+                    Carros Disponíveis
+                </h1>
+                <p class="flex-p" id="1f">Modelo ABC | Preço R$xxx.xxx,xx <button onclick="apaga(`1f`)">X</button></p>
+                <p class="flex-p" id="2f">Modelo ABC | Preço R$xxx.xxx,xx <button onclick="apaga(`2f`)">X</button></p>
+                <p class="flex-p" id="3f">Modelo ABC | Preço R$xxx.xxx,xx <button onclick="apaga(`3f`)">X</button></p>
+
+                <button class="sair" onclick="sair('Sala6')">X</button>
+            </div>
+            <!-- Sala 7 -->
+            <div onclick="modal('Sala7')" id="div-pai" class="Sala7"><strong style="font-size:20px;font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">4</strong></div>
+            <div class="modal sala7-modal desactive" id="Sala7-modal">
+                <h1 style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">
+                    Carros Disponíveis
+                </h1>
+                <p class="flex-p" id="1g">Modelo ABC | Preço R$xxx.xxx,xx <button onclick="apaga(`1g`)">X</button></p>
+                <p class="flex-p" id="2g">Modelo ABC | Preço R$xxx.xxx,xx <button onclick="apaga(`2g`)">X</button></p>
+                <p class="flex-p" id="3g">Modelo ABC | Preço R$xxx.xxx,xx <button onclick="apaga(`3g`)">X</button></p>
+                <p class="flex-p" id="4g">Modelo ABC | Preço R$xxx.xxx,xx <button onclick="apaga(`4g`)">X</button></p>
+                <button class="sair" onclick="sair('Sala7')">X</button>
+            </div>
+            <!-- Sala 8 -->
+            <div onclick="modal('sala8')" id="div-pai" class="sala8"><strong style="font-size:20px;font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">10</strong></div>
+            <div class="modal sala8-modal desactive" id="sala8-modal">
+                <h1 style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">
+                    Carros Disponíveis
+                </h1>
+                <p class="flex-p" id="1h">Modelo ABC | Preço R$xxx.xxx,xx <button onclick="apaga(`1h`)">X</button></p>
+                <p class="flex-p" id="2h">Modelo ABC | Preço R$xxx.xxx,xx <button onclick="apaga(`2h`)">X</button></p>
+                <p class="flex-p" id="3h">Modelo ABC | Preço R$xxx.xxx,xx <button onclick="apaga(`3h`)">X</button></p>
+                <p class="flex-p" id="4h">Modelo ABC | Preço R$xxx.xxx,xx <button onclick="apaga(`4h`)">X</button></p>
+                <p class="flex-p" id="5h">Modelo ABC | Preço R$xxx.xxx,xx <button onclick="apaga(`5h`)">X</button></p>
+                <p class="flex-p" id="6h">Modelo ABC | Preço R$xxx.xxx,xx <button onclick="apaga(`6h`)">X</button></p>
+                <p class="flex-p" id="7h">Modelo ABC | Preço R$xxx.xxx,xx <button onclick="apaga(`7h`)">X</button></p>
+                <p class="flex-p" id="8h">Modelo ABC | Preço R$xxx.xxx,xx <button onclick="apaga(`8h`)">X</button></p>
+                <p class="flex-p" id="9h">Modelo ABC | Preço R$xxx.xxx,xx <button onclick="apaga(`9h`)">X</button></p>
+                <p class="flex-p" id="10h">Modelo ABC | Preço R$xxx.xxx,xx <button onclick="apaga(`10h`)">X</button></p>
+                <button class="sair" onclick="sair('sala8')">X</button>
+            </div>
+            <!-- Sala 9 -->
+            <div onclick="modal('sala9')" id="div-pai" class="sala9"><strong style="font-size:20px;font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">9</strong></div>
+            <div class="modal sala9-modal desactive" id="sala9-modal">
+                <h1 style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">
+                    Carros Disponíveis
+                </h1>
+                <p class="flex-p" id="1i">Modelo ABC | Preço R$xxx.xxx,xx <button onclick="apaga(`1i`)">X</button></p>
+                <p class="flex-p" id="2i">Modelo ABC | Preço R$xxx.xxx,xx <button onclick="apaga(`2i`)">X</button></p>
+                <p class="flex-p" id="3i">Modelo ABC | Preço R$xxx.xxx,xx <button onclick="apaga(`3i`)">X</button></p>
+                <p class="flex-p" id="4i">Modelo ABC | Preço R$xxx.xxx,xx <button onclick="apaga(`4i`)">X</button></p>
+                <p class="flex-p" id="5i">Modelo ABC | Preço R$xxx.xxx,xx <button onclick="apaga(`5i`)">X</button></p>
+                <p class="flex-p" id="6i">Modelo ABC | Preço R$xxx.xxx,xx <button onclick="apaga(`6i`)">X</button></p>
+                <p class="flex-p" id="7i">Modelo ABC | Preço R$xxx.xxx,xx <button onclick="apaga(`7i`)">X</button></p>
+                <p class="flex-p" id="8i">Modelo ABC | Preço R$xxx.xxx,xx <button onclick="apaga(`8i`)">X</button></p>
+                <p class="flex-p" id="9i">Modelo ABC | Preço R$xxx.xxx,xx <button onclick="apaga(`9i`)">X</button></p>
+                <button class="sair" onclick="sair('sala9')">X</button>
+            </div>
+            <!-- Sala 10 -->
+            <div onclick="modal('sala10')" id="div-pai" class="sala10"><strong style="font-size:20px;font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">3</strong></div>
+            <div class="modal sala10-modal desactive" id="sala10-modal">
+                <h1 style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">
+                    Carros Disponíveis
+                </h1>
+                <p class="flex-p" id="1j">Modelo ABC | Preço R$xxx.xxx,xx <button onclick="apaga(`1j`)">X</button></p>
+                <p class="flex-p" id="2j">Modelo ABC | Preço R$xxx.xxx,xx <button onclick="apaga(`2j`)">X</button></p>
+                <p class="flex-p" id="3j">Modelo ABC | Preço R$xxx.xxx,xx <button onclick="apaga(`3j`)">X</button></p>
+                <button class="sair" onclick="sair('sala10')">X</button>
+            </div>
+            <!-- Sala 11 -->
+            <div onclick="modal('sala11')" id="div-pai" class="sala11"><strong style="font-size:20px;font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">6</strong></div>
+            <div class="modal sala11-modal desactive" id="sala11-modal">
+                <h1 style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">
+                    Carros Disponíveis
+                </h1>
+                <p class="flex-p" id="1k">Modelo ABC | Preço R$xxx.xxx,xx <button onclick="apaga(`1k`)">X</button></p>
+                <p class="flex-p" id="2k">Modelo ABC | Preço R$xxx.xxx,xx <button onclick="apaga(`2k`)">X</button></p>
+                <p class="flex-p" id="3k">Modelo ABC | Preço R$xxx.xxx,xx <button onclick="apaga(`3k`)">X</button></p>
+                <p class="flex-p" id="4k">Modelo ABC | Preço R$xxx.xxx,xx <button onclick="apaga(`4k`)">X</button></p>
+                <p class="flex-p" id="5k">Modelo ABC | Preço R$xxx.xxx,xx <button onclick="apaga(`5k`)">X</button></p>
+                <p class="flex-p" id="6k">Modelo ABC | Preço R$xxx.xxx,xx <button onclick="apaga(`6k`)">X</button></p>
+                <button class="sair" onclick="sair('sala11')">X</button>
+            </div>
+        </div>
+    </div>
+    <script>
+        function modal(param){
+            let modals = document.getElementsByClassName(`modal`)
+            for (let i = 0;i<modals.length;i++){
+                modals[i].setAttribute('class', `modal ${param}-modal desactive`)
+            }
+            
+            let modal = document.getElementById(`${param}-modal`)
+            modal.setAttribute('class', `modal ${param}-modal active`)
+            let classificados = []
+            
+        }
+
+        function apaga(param){
+            let p = document.getElementById(`${param}`)
+            p.style = "display:none;"
+
+        }
+        
+        
+        
+        function sair(param){
+            let modal = document.getElementById(`${param}-modal`);
+            let all = document.getElementById('div-pai'); 
+            modal.setAttribute('class', `modal ${param}-modal desactive`);
+        }
+    </script>
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.form/4.3.0/jquery.form.min.js"></script>
+</body>
+</html>
