@@ -12,6 +12,10 @@ class SalaCarro extends Model
     
     public $timestamps = false;
 
+    protected $id;
+    protected $salas_id; 
+    protected $carros_id; 
+
     public function Sala(){
         return $this->belongsTo(Sala::class, 'sala_id');
     }

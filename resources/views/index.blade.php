@@ -25,7 +25,7 @@
         <div class="container justify-content-center" style="width:790px;">
             <?php $i=0; ?>
             @foreach($carros as $carro)
-            <div id="{{$i}}" style="background-color:rgb(0,0,255);" class="Sala{{$i}} div-pai"><strong style="font-size:20px;font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;color:white;">{{ $carro }}</strong></div>
+            <div id="{{$i}}" style="background-color:rgb(0,0,255);" class="Sala{{$i}} div-pai"><strong id="num" style="font-size:20px;font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;color:white;">{{ $carro }}</strong></div>
             <?php $i=$i+1; ?>
             @endforeach
         </div>
@@ -78,6 +78,11 @@
 <script>
     var settings1 = 
     {
+    
+        lengthMenu: [
+            [5, 5, 5, -1],
+            [5, 5, 5, 'All'],
+        ] ,
         scrollX: true,
         select: {
             style: 'single',
@@ -149,9 +154,7 @@
             exportOptions: {
                 columns: ':visible'
             }
-        }
-        
-        ]
+        }]
     } 
     
 </script>

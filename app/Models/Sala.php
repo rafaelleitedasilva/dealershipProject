@@ -10,4 +10,7 @@ class Sala extends Model
     use HasFactory;
     
     protected $table = 'salas';
+    public $timestamps = false;
+    protected $id;
+    protected $Nome; 
 }
