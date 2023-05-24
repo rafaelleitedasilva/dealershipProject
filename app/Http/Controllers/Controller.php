@@ -21,4 +21,13 @@ class Controller extends BaseController
 
         return view('carros')->with('carros', $carros);
     }
+
+    public function delete(Request $request){
+        $id = $request->id;
+
+        $carros = new SalaCarro;
+        $carros = $carros->where('id', $id)->delete();
+
+        return redirect()->back();
+    }
 }

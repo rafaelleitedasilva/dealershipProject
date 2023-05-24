@@ -14,7 +14,7 @@
                 <tr>
                     <td>{{ $carro->Carro->Nome }}</td>
                     <td>{{ $carro->Carro->Valor }}</td>
-                    <td><button class="btn btn-danger">Remover Carro</button></td>
+                    <td><button class="btn btn-danger remover-carro" id="{{ $carro->id }}">Remover Carro</button></td>
                 </tr>
                 @endforeach
         </table>
@@ -24,6 +24,28 @@
             </div>
         </div>
     </div>
+
+    <script>
+        $.ajaxSetup({
+            headers: {
+                'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+            }
+        });
+        $('.remover-carro').on('click', function(){
+            $.ajax({
+                url:"{{ route('remover.carro') }}",
+                type: "POST",
+                data: {
+                    '_token': $('meta[name="csrf-token"]').attr('content'),
+                    'id': $(this).attr('id')
+                },
+                dataType: "html",
+                success: function(response){
+                    $('#alerta').show();
+                }
+            })
+        });
+    </script>
     
     <script>
     $('.close').on('click', function(){

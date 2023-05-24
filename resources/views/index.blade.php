@@ -15,14 +15,17 @@
         <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.13.2/css/jquery.dataTables.min.css"/>
 </head>
 <body>
+    <div class="alert alert-success alert-dismissible fade show position-absolute" style="top:20px;left:15px;z-index:2001;" id="alerta" role="alert">
+        <strong>Carro Removido!</strong> O carro foi removido da sala com sucesso!
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+
     <div class="d-flex justify-content-center align-items-center ml" style="width: 100vw; height: 100vh;">
     <div class="d-flex justify-content-center align-items-center" style="width: 100vw; height: 100vh;">
         <div class="container justify-content-center" style="width:790px;">
             <?php $i=0; ?>
             @foreach($carros as $carro)
-            @if($carro != 0)
             <div id="{{$i}}" style="background-color:rgb(0,0,255);" class="Sala{{$i}} div-pai"><strong style="font-size:20px;font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;color:white;">{{ $carro }}</strong></div>
-            @endif
             <?php $i=$i+1; ?>
             @endforeach
         </div>
@@ -36,6 +39,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.form/4.3.0/jquery.form.min.js"></script>
 
     <script>
+        $('#alerta').hide();
+
         $.ajaxSetup({
             headers: {
                 'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')

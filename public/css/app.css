@@ -29,6 +29,10 @@ body{
     height: 300px;
 }
 
+.container>.Sala0{
+    display:none;
+}
+
 .container>.Sala1{
     position: absolute;
     display: flex;

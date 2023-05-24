@@ -27,3 +27,4 @@ Route::get('/', function(){
 });
 
 Route::get('/carros', [Controller::class, 'view'])->name('salas.carros');
+Route::post('/carros', [Controller::class, 'delete'])->name('remover.carro');
