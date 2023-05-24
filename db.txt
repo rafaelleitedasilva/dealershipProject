@@ -1,0 +1,11 @@
+insert into salas values(1, 'Sala 1');
+insert into salas values(2, 'Sala 2');
+insert into salas values(3, 'Sala 3');
+insert into salas values(4, 'Sala 4');
+insert into salas values(5, 'Sala 5');
+insert into salas values(6, 'Sala 6');
+insert into salas values(7, 'Sala 7');
+insert into salas values(8, 'Sala 8');
+insert into salas values(9, 'Sala 9');
+insert into salas values(10, 'Sala 10');
+insert into salas values(11, 'Sala 11');

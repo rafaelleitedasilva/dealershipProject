@@ -1,0 +1,215 @@
+body{
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+
+.flex{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-p{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.container{
+    position: relative;
+    width: 55%;
+    height: 70%;
+}
+
+.sd-70{
+    overflow-y: scroll;
+    height: 300px;
+}
+
+.container>.Sala1{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 20px;
+    left: 50px;
+    border: 1px solid white;
+    background-color: white;
+    height: 25px;
+    width: 60px; 
+    transform: rotate(20deg);
+    z-index: 1;
+}
+
+.container>.Sala2{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 85px;
+    left: 20px;
+    border: 1px solid white;
+    background-color: white;
+    height: 100px;
+    width: 200px; 
+    transform: rotate(20deg);
+    z-index: 1;
+}
+
+.container>.Sala3{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 220px;
+    left: 10px;
+    border: 1px solid white;
+    background-color: white;
+    height: 200px;
+    width: 300px; 
+    z-index: 1;
+}
+
+.container>.Sala4{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 100px;
+    left: 140px;
+    background-color: white;
+    border: 1px solid white;
+    height: 280px;
+    width: 400px; 
+    z-index: 0;
+}
+
+.container>.Sala5{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0px;
+    left: 400px;
+    background-color: white;
+    border: 1px solid white;
+    height: 180px;
+    width: 360px; 
+    z-index: 1;
+}
+
+.container>.Sala6{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 220px;
+    left: 10px;
+    background-color: white;
+    border: 1px solid white;
+    height: 70px;
+    width: 50px; 
+    z-index: 1;
+}
+
+.container>.Sala7{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 350px;
+    left: 260px;
+    background-color: white;
+    border: 1px solid white;
+    height: 70px;
+    width: 50px; 
+    z-index: 1;
+}
+
+.container>.Sala8{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 260px;
+    left: 490px;
+    background-color: white;
+    border: 1px solid white;
+    height: 200px;
+    width: 200px; 
+    transform: rotate(45deg);
+    z-index: 1;
+}
+
+.container>.Sala9{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 226px;
+    left: 620px;
+    background-color: white;
+    border: 1px solid white;
+    height: 60px;
+    width: 150px; 
+    transform: rotate(45deg);
+    z-index: 1;
+}
+
+.container>.Sala10{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 70px;
+    left: 635px;
+    background-color: white;
+    border: 1px solid white;
+    height: 50px;
+    width: 130px; 
+    transform: rotate(55deg);
+    z-index: 1;
+}
+.container>.Sala11{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0px;
+    left: 400px;
+    background-color: white;
+    border: 1px solid white;
+    height: 50px;
+    width: 130px; 
+    z-index: 1;
+}
+
+.sair:hover{
+    cursor: pointer;
+}
+
+.desactive{
+    display: none;
+}
+
+.desactive:hover{
+    cursor:pointer !important;
+}
+
+.acive{
+    display: block;
+}
+
+.container-carros{
+    width: 100%;
+}
+
+.container-carros>p{
+    font-family: Arial, Helvetica, sans-serif;
+    display: inline-flex;
+    font-size: 20px;
+    text-transform: uppercase;
+}
