@@ -8,7 +8,8 @@ use Illuminate\Foundation\Validation\ValidatesRequests;
 use Illuminate\Http\Request;
 use App\Models\{
     SalaCarro,
-    User
+    User,
+    Venda
 };
 use Illuminate\Routing\Controller as BaseController;
 
@@ -31,6 +32,11 @@ class Controller extends BaseController
         $carros = new SalaCarro;
         $carros = $carros->where('id', $id)->delete();
 
+        $venda = new Venda;
+        $venda->user_id = $request->cliente;
+        $venda->sala_carro_id = $request->id;
+        $venda->save();
+
         return redirect()->back();
     }
 
@@ -41,6 +47,6 @@ class Controller extends BaseController
         $carro_sala = new SalaCarro;
         $carro_sala = $carro_sala->where('id', $request->id)->first();
 
-        return view('venda')->with('clientes', $clientes);
+        return view('venda')->with('clientes', $clientes)->with('carro_sala', $carro_sala);
     }
 }

@@ -11,10 +11,7 @@ class SalaCarro extends Model
     protected $table = 'salas_carros';
     
     public $timestamps = false;
-
-    protected $id;
-    protected $salas_id; 
-    protected $carros_id; 
+    protected $primaryKey = 'id';
 
     public function Sala(){
         return $this->belongsTo(Sala::class, 'sala_id');

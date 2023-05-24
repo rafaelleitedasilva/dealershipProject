@@ -14,7 +14,7 @@
                 <tr>
                     <td>{{ $carro->Carro->Nome }}</td>
                     <td>{{ $carro->Carro->Valor }}</td>
-                    <td><button class="btn btn-danger remover-carro" id="{{ $carro->id }}">Remover Carro</button></td>
+                    <td><button class="btn btn-danger remover-carro" id="{{ $carro->id }}">Vender Carro</button></td>
                 </tr>
                 @endforeach
         </table>
